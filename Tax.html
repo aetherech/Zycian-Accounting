@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://storyset.com/data"></a>
+    <a href="https://storyset.com/business"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Accounting</title>    
+</head>
+<style>
+       body {
+            font-family: "Tilt Neon";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+     .topnav {
+            position: absolute;
+            top: 0;
+            align-items: right;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.029); /* Semi-transparent white background */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            padding: 10px 0; /* Adjust padding for better spacing */
+            animation: fadeInUp 1s ease;
+        }
+
+        .topnav a {
+            margin-right: 50px;
+            float: right;
+            display: block;
+            color: #333; /* Adjust text color for better visibility */
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            transition: border-bottom 0.4s; /* Add transition for smooth underline effect */
+        }
+
+        .topnav a:hover {
+            border-bottom: 3px solid #000000; /* Add blue underline on hover */
+        }
+
+        .container {
+    width: 95%;
+    margin: 0 auto;
+}
+.container {
+    padding: 5%;
+    text-align: center;
+}
+
+.tax {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax h2 {
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.tax p1 {
+    font-size: 20px; /* Increase the font size for tax section headings */
+}
+
+.results {
+    width: 100%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.results h2 {
+    margin: 3%;
+    margin-top: 5%;
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.results p {
+    margin: 3%;
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.graphics {
+    flex-basis: 30%; /* Set the initial size of items */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+}
+
+.graphics div {
+    text-align: center;
+    flex-basis: 30%; /* Set the initial size of items */
+    margin-bottom: 20px; /* Add some spacing */
+}
+
+.graphics img {
+    width: 200px; /* Set the width of images as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some spacing */
+}
+
+.savings-text {
+    margin-bottom: 45px; /* Add some spacing */
+    font-size: 45px;
+}
+
+.percentage {
+    margin-top: 35px; /* Add some spacing */
+    font-size: 45px;
+}
+  /* Results*/
+
+  .about-section {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: left; /* Align the container to the left */
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .about-heading-block {
+    width: 450px;
+    max-width: 1000px;
+    padding: 2%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    transition: all 2.5s ease; /* Apply transition to all properties */
+  }
+  .about-content {
+    transition: all 2.5s ease; /* Apply transition to all properties */
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the left */
+    }
+  }
+  
+  .about-content p {
+    color: #000000;
+    text-align: left; /* Center the paragraph text */
+    opacity: 0; /* Initially set opacity to 0 to hide the paragraph */
+    animation: slideInLeft 2.5s ease forwards; /* Apply slide-in animation */
+    font-size: 24px;
+    margin-right: 1%;
+    opacity: 1;
+  }
+  /*Results*/
+  .testimonials-section {
+    text-align: center;
+    height: 500px;
+    font-size: 30px;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .testimonial {
+    
+    width: 30%; /* Adjust the width of each testimonial */
+    padding: 1px;
+    background-color: #ffffff;
+  }
+  
+  .testimonial p {
+    font-size: 20px;
+    margin-top: 100px;
+    font-style: italic;
+  }
+  
+  .testimonial p:last-child {
+    margin-top: 10px;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start off-screen */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to its original position */
+    }
+  }
+
+</style>
+<body>
+    <div>
+        <header>
+            <div class="topnav">
+                <a href="Homepage.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="container fade-in">
+            <h1>Navigating Tax with Zycian Accounting</h1>
+            <p>Navigating tax involves understanding regulations, monitoring updates, and planning strategically.</p>
+            <div>
+                <img src="assets/illustrations/investment-data-animate copy.svg" alt="Tax Image" height="500px" width="100%"/>
+            </div>
+        </div>
+    
+        <div class="tax fade-in">
+            <h2>Tax</h2>
+            <p1>Taxation is a fundamental component of government revenue generation, serving as a means to fund public services and programs.</p1>
+            <h2>Tax Planning</h2>
+            <p1>Tax planning is about smart financial decisions to minimize taxes while staying within legal boundaries. 
+                It includes strategies like deferring income, claiming deductions, and optimizing investments. 
+                Consulting with professionals can ensure personalized and effective planning.</p1>
+        </div>
+          
+        
+        <div class="about-section" style="margin-top:19%;">
+            <div class="about-heading">
+                <div class="about-heading-block">
+                    <h1>What We Do</h1>
+                    <img src="assets/illustrations/results.svg" alt="Zacian Accounting Logo" height= width="30%"/>
+                </div>
+            </div>
+    
+            <div class="about-content">
+                <p>Zycian Accounting provides comprehensive tax services for individuals and businesses. 
+                    Our expert team offers personalized planning strategies to minimize liabilities and maximize savings.</p>
+                <p>We ensure accurate income tax preparation and compliance with all laws, making tax season stress-free. 
+                    Additionally, we offer guidance on deductions, credits, and tax-saving opportunities.</p>
+                <p>Trust Zycian Accounting for expert attention to detail and a financially rewarding tax season.</p>
+                
+               </div>
+        </div>
+        
+        <div class="graphics fade-in" style="margin-top:10%;">
+            
+            <div>
+                <h2 class="savings-text">Savings</h2>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/nkfxhqqr.json"
+                    trigger="loop"
+                    delay="2000"
+                    style="width:250px;height:250px">
+                </lord-icon>
+                <h3 class="percentage">+50%</h3>
+            </div>
+            <div>
+                <h2 class="savings-text">Cash Flow</h2>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/ofdfurqa.json"
+                    trigger="loop"
+                    delay="2000"
+                    style="width:250px;height:250px">
+                </lord-icon>
+                <h3 class="percentage">+50%</h3>
+            </div>
+            <div>
+                <h2 class="savings-text">Reduced Stress</h2>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/pzetejwe.json"
+                    trigger="loop"
+                    delay="2000"
+                    style="width:250px;height:250px">
+                </lord-icon>
+                <h3 class="percentage">+50%</h3>
+            </div>
+        </div>
+    
+    </div>
+    <div class="testimonials-section">
+        <div class="testimonials">
+            <div class="testimonial">
+    
+                <h2>Maximized Savings</h2>
+    <p >Effective tax planning can help minimize tax liabilities, 
+        allowing individuals and businesses to keep more of their earnings.</p>
+            </div>
+            <div class="testimonial">
+                <h2 >Improved Cash Flow</h2>
+                <p >By optimizing tax payments and timing, businesses can enhance cash flow, 
+                    providing more resources for operations, investments, or growth initiatives.</p>
+            </div>
+            <div class="testimonial">
+                <h2 >Reduced Stress</h2>
+    <p >Having a clear tax plan in place reduces anxiety during 
+        tax season and allows for smoother filing processes.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

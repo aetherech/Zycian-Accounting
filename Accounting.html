@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://storyset.com/data"></a>
+    <a href="https://storyset.com/business"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Accounting</title>    
+</head>
+<style>
+       body {
+            font-family: "Tilt Neon";
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+     .topnav {
+            position: absolute;
+            top: 0;
+            align-items: right;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.029); /* Semi-transparent white background */
+            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+            padding: 10px 0; /* Adjust padding for better spacing */
+            animation: fadeInUp 1s ease;
+        }
+
+        .topnav a {
+            margin-right: 50px;
+            float: right;
+            display: block;
+            color: #333; /* Adjust text color for better visibility */
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            transition: border-bottom 0.4s; /* Add transition for smooth underline effect */
+        }
+
+        .topnav a:hover {
+            border-bottom: 3px solid #000000; /* Add blue underline on hover */
+        }
+
+        .container {
+    width: 95%;
+    margin: 0 auto;
+}
+.container {
+    padding: 5%;
+    text-align: center;
+}
+
+.tax {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tax h2 {
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.tax p1 {
+    font-size: 20px; /* Increase the font size for tax section headings */
+}
+
+.results {
+    width: 100%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.results h2 {
+    margin: 3%;
+    margin-top: 5%;
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.results p {
+    margin: 3%;
+    font-size: 30px; /* Increase the font size for tax section headings */
+}
+
+.graphics {
+    flex-basis: 30%; /* Set the initial size of items */
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next row if necessary */
+}
+
+.graphics div {
+    text-align: center;
+    flex-basis: 30%; /* Set the initial size of items */
+    margin-bottom: 20px; /* Add some spacing */
+}
+
+.graphics img {
+    width: 200px; /* Set the width of images as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some spacing */
+}
+
+.savings-text {
+    margin-bottom: 45px; /* Add some spacing */
+    font-size: 45px;
+}
+
+.percentage {
+    margin-top: 35px; /* Add some spacing */
+    font-size: 45px;
+}
+  /* Results*/
+
+  .about-section {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: left; /* Align the container to the left */
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+  }
+
+  .about-heading-block {
+    width: 450px;
+    max-width: 1000px;
+    padding: 2%;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+    transition: all 2.5s ease; /* Apply transition to all properties */
+  }
+  .about-content {
+    transition: all 2.5s ease; /* Apply transition to all properties */
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0); /* Slide in to the left */
+    }
+  }
+  
+  .about-content p {
+    color: #000000;
+    text-align: left; /* Center the paragraph text */
+    opacity: 0; /* Initially set opacity to 0 to hide the paragraph */
+    animation: slideInLeft 2.5s ease forwards; /* Apply slide-in animation */
+    font-size: 24px;
+    margin-right: 1%;
+    opacity: 1;
+  }
+  /*Results*/
+  .testimonials-section {
+    height: 500px;
+    font-size: 30px;
+  }
+  
+  .testimonials {
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    margin-top: 5%; /* Adjust the top margin as needed */
+}
+
+.testimonial {
+    padding: 10px;
+    background-color: #ffffff;
+    margin-bottom: 20px; /* Add margin bottom to create space between testimonials */
+    margin-right: 20px; /* Add margin right to create space between testimonials */
+}
+
+
+.testimonial p {
+    font-size: 20px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+  .testimonial p:last-child {
+    margin-top: 10px;
+  }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(50px); /* Start off-screen */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Move to its original position */
+    }
+  }
+
+</style>
+<body>
+    <div>
+        <header>
+            <div class="topnav">
+                <a href="Homepage.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </div>
+        </header>
+    </div>
+    <main>
+        <div class="container fade-in">
+            <h1>Managing Finances with Zycian Accounting</h1>
+            <p>Managing finances encompasses various aspects such as budgeting, bookkeeping, and financial analysis, ensuring financial health and compliance.</p>
+
+            <div>
+                <img src="assets/illustrations/accountinghead.svg" alt="Tax Image" height="500px" width="100%"/>
+            </div>
+        </div>
+    
+        <div class="tax fade-in">
+            <h2>Accounting</h2>
+            <p1>Accounting plays a pivotal role in businesses by providing a systematic way to record, analyze, and report financial transactions.
+                It encompasses processes such as bookkeeping, financial statement preparation, and auditing, ensuring accurate and transparent financial records.</p1>
+            <h2>Financial Management</h2>
+            <p1>Effective financial management is essential for businesses to achieve their goals and sustain growth. 
+                It involves activities like budgeting, forecasting, and financial analysis to optimize resources, mitigate risks, and maximize profitability. 
+                Collaborating with skilled professionals can enhance financial decision-making and overall business performance.</p1>
+        </div>
+
+        </div>
+          
+        
+        <div class="about-section" style="margin-top:19%;">
+            <div class="about-heading">
+                <div class="about-heading-block">
+                    <h1>What We Do</h1>
+                    <img src="assets/illustrations/accounting.svg" alt="Zacian Accounting Logo" height= width="30%"/>
+                </div>
+            </div>
+    
+            <div class="about-content">
+                <p>Zycian Accounting offers tailored accounting solutions for individuals and businesses. 
+                    <p>Our comprehensive services include financial statement preparation, budget analysis, and forecasting.</p> 
+                    <p>With meticulous attention to detail, we uncover valuable insights to drive growth.</p>
+                <p> Trust us for accurate reporting and expert analysis, ensuring compliance and informed decision-making. </p>
+                <p>Let Zycian Accounting optimize your financial performance and support your business goals.</p>
+               
+                
+               </div>
+        </div>
+    
+    <div class="testimonials-section" style="margin-top: 10%;">
+        <div class="testimonials">
+            <div class="testimonial">
+    
+                <h2>Analytical Review</h2>
+    <p >At Zycian Accounting, our analytical review goes beyond just skimming the surface of your financial data. 
+        We delve deep into the numbers, employing advanced techniques to uncover valuable insights and trends that may have previously gone unnoticed. 
+        By understanding the intricacies of your financial landscape, we empower you with the knowledge needed to make 
+        informed decisions that drive your business forward. 
+        Our tailored approach ensures that the analysis is customized to your specific industry, challenges, and goals, 
+        maximizing the value derived from your financial data.</p>
+            </div>
+            <div class="testimonial">
+                <h2 >Compilations</h2>
+                <p > When it comes to compiling financial data, precision and accuracy are non-negotiable at Zycian Accounting.
+                     Our team of experts meticulously organizes and consolidates your financial information, ensuring that your reports not only meet but exceed the highest standards of quality and compliance. 
+                     We leverage cutting-edge technology and industry best practices to streamline the compilation process, saving you time and resources while delivering reports that are clear, concise, and actionable. 
+                    With Zycian Accounting, you can trust that your financial data is in capable hands, allowing you to focus on driving growth and innovation within your organization.</p>
+            </div>
+            <div class="testimonial">
+                <h2 >Review of Financial Statements</h2>
+    <p >Our commitment to excellence extends to the review of your financial statements at Zycian Accounting. 
+        Our experienced professionals conduct a thorough examination of your statements, 
+        meticulously scrutinizing every line item to ensure accuracy and reliability. 
+        But we don't stop there – our team goes the extra mile to provide expert analysis and actionable recommendations
+         aimed at enhancing clarity and transparency in your financial reporting. By partnering with Zycian Accounting, 
+         companies benefit from not only accurate financial statements but also valuable insights that drive strategic 
+         decision-making and foster long-term success.</p>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>

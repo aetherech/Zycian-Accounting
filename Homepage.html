@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <a href="https://lordicon.com/"></a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+
+</head>
+<style>
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Tilt Neon";
+}
+
+.topnav {
+  position: fixed; /* Change position to fixed to keep it fixed at the top */
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.029);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  animation: fadeInUp 1s ease;
+  z-index: 9999; /* Ensure the navigation bar appears above all other elements */
+}
+.topnav a {
+  margin-right: 50px;
+  float: right;
+  display: block;
+  color: #333; /* Adjust text color for better visibility */
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: border-bottom 0.4s; /* Add transition for smooth underline effect */
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid #000000; /* Add blue underline on hover */
+}
+
+.hero-image {
+  height: 55vh;
+  background-image: url('assets/images/graph.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 0; /* Lower the z-index to ensure the navigation bar appears above the hero section */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-text img {
+  width: auto; /* Adjust the width of the logo */
+  height: 25vh; /* Allow the height to adjust proportionally */
+  display: block;
+  opacity: 1;
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+
+.about-section {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: left; /* Align the container to the left */
+  align-items: center;
+  height: 450px;
+  width: fit-content;
+}
+.about-section img{
+  opacity: 0.6;
+  backdrop-filter: blur(100px); /* Apply a blur effect to the background */
+}
+.about-heading-block {
+  width: 400px;
+  max-width: 1000px;
+  margin-left: 5%;
+  background-color: #2a3b93e3;
+  height: 450px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: skewY(-20deg); /* Skew the block */
+  transition: all 2.5s ease; /* Apply transition to all properties */
+}
+.about-content {
+  padding: 20px;
+  transition: all 2.5s ease; /* Apply transition to all properties */
+}
+.about-content p {
+  color: #000000;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Center the paragraph text */
+  opacity: 0; /* Initially set opacity to 0 to hide the paragraph */
+  animation: slideInRight 2.5s ease forwards; /* Apply slide-in animation */
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Slide in to the left */
+  }
+}
+
+.about-heading h2 {
+  color: #000000;
+  align-items: bottom;
+  margin-top: 100px;
+  transition: opacity 0.5s ease-in;
+}
+
+.about-heading .bottom-text {
+  align-self: flex-end; /* Move the text to the bottom of the container */
+  margin-top: auto; /* Push the text to the bottom of the container */
+}
+
+.about-heading h2 {
+  /*our*/
+  font-size: 100px;
+  color: #ffffff;
+  margin-top: 90px;
+  transition: opacity 0.5s ease-in; /* Apply transition to the opacity property */
+}
+.about-heading h1 {
+  /*story*/
+  font-size: 100px;
+  color: #ffffff;
+  margin-top: 50px;
+  transition: opacity 0.5s ease-in; /* Apply transition to the opacity property */
+}
+
+.about-content p {
+  color: #000000;
+  font-size: 25px;
+  margin-left: 15%;
+  margin-right: 5%;
+  opacity: 1;
+  text-align: center; /* Align paragraph text to the right */
+}
+
+.about-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  filter: brightness(0.5); /* Adjust the brightness to darken the image */
+}
+
+.services-section {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden; /* Hide overflow for the pseudo-element */
+  z-index: 0; /* Ensure the pseudo-element is behind the blocks */
+  height: 500px; /* Adjust the height of the service section */
+}
+
+.service-block {
+  height: 400px;
+  width: 300px;
+  margin-top: auto;
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; /* Initially set opacity to 0 to hide the blocks */
+  animation: slideInBottom 2.5s ease forwards; /* Apply slide-in animation */
+}
+
+.service-block.active {
+  opacity: 1;
+}
+
+@keyframes slideInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Start off-screen below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Slide in from below */
+  }
+}
+
+.service-block img {
+  max-width: 90%;
+  height: 450px;
+  margin-bottom: 10px;
+}
+
+.service-block h3 {
+  color: #000000;
+  margin-top: 0;
+  text-align: center;
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.background-rectangle {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0; /* Adjust the top position to move the rectangle upwards */
+  left: 50%;
+  transform: translateX(-50%) rotate(155deg); /* Keep the rotation angle */
+  width: 150%; /* Adjust the width to cover the content area */
+  height: 50vh; /* Adjust the height to cover the viewport */
+background-color: #1b2f91e3;
+  z-index: -1;
+  animation: fadeInUp 1s ease -in-out forwards, slideInBottom 1s cubic-bezier(.2  5,.8,.25,1) both;
+}
+
+.service-block.reverse {
+  opacity: 0; /* Change opacity to 0 to make the block disappear */
+}
+.about-content p.reverse {
+  opacity: 0; /* Change opacity to 0 to make the text disappear */
+}
+
+.testimonials-section {
+  margin-top: 100px;
+  text-align: center;
+  height: 500px;
+  font-size: 30px;
+  font-family: "Tilt Neon";
+  color: #000000;
+}
+
+.testimonials-section {
+  margin-top: 100px;
+  text-align: center;
+  height: 500px;
+  font-size: 30px;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testimonial {
+  width: 30%;
+  padding: 1px;
+  background-color: #ffffff;
+  color: #000000; /* Set text color to black */
+}
+
+.testimonial p {
+  font-size: 20px;
+  margin-top: 100px;
+  color: #000000;
+}
+
+.testimonial p:last-child {
+  margin-top: 10px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* Start off-screen */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Move to its original position */
+  }
+}
+.footer {
+background-color: #1b2f91e3;
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  animation: fadeInUp 1s ease-in-out forwards; /* Add an animated appearance using the 'fadeInUp' keyframe animation */
+  padding: 20px;
+  color: #fdfdfd; /* Adjust text color for better visibility */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left:  500px; /* Center the last item by pushing it right */
+  margin-right: auto;
+}
+
+.footer .footer-logo img{
+  position: absolute;
+  width: 10%;
+  left: 10px;
+}
+.social-links,
+.get-in-touch {
+  width: 50%; /* Adjust width of each section */
+  animation: fadeInUp 7.5s ease 
+}
+
+.social-links h3,
+.get-in-touch h3 {
+  margin-bottom: 10px;
+}
+
+.get-in-touch {
+  width: 45%; /* Adjust width of the section */
+  text-align: center; /* Center align the content */
+  margin: 0 auto; /* Center the section horizontally */
+  margin-right: 300px;
+}
+
+
+.social-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.social-links ul li {
+  margin-bottom: 5px;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+</style>
+<body>
+    <div>
+        <header>
+            <div class="topnav">
+                <a href="Homepage.html">Home</a>
+                <a href="resources.html">Resources</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </div>
+        </header>
+    </div>
+    <main>
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="assets/Transparent Logo.png" alt="Logo" height="200px" width="500px">
+        </div>
+    </div>
+
+    <div class="about-section" >
+        <div class="about-heading">
+            <div class="about-heading-block">
+                <h2>Our</h2>
+                <h1>Story</h1>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p>At Zycian Accounting, we specialize in professional bookkeeping, accounting, and expert tax solutions.</p><br>
+            
+            <p>With a team of experienced professionals, we offer personalized financial guidance and strategic planning to meet your unique needs.</p><br>
+
+            <P>Trust us to be your reliable partner in achieving your financial goals and securing a prosperous future.  </P>
+            
+        </div>
+    </div>
+
+    <div class="services-section">
+        <div class="services-section">
+            <div class="service-block">
+                <h1>Tax</h1>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/wyqtxzeh.json"
+                    trigger="loop"
+                    delay="2000"
+                    stroke="light"
+                    state="hover-spending"
+                    colors="primary:#000000,secondary:#08a88a"
+                    style="width:250px;height:250px">
+                </lord-icon>
+            </div>
+            <div class="service-block">
+                <h1>Bookkeeping</h1>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/lenjvibx.json"
+    trigger="loop"
+    delay="1000"
+    stroke="light"
+    state="morph-open"
+    style="width:250px;height:250px">
+</lord-icon>
+            </div>
+            <div class="service-block">
+                <h1>Accounting</h1>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/wzwygmng.json"
+    trigger="in"
+    delay="1500"
+    stroke="light"
+    state="in-reveal"
+    style="width:250px;height:250px">
+</lord-icon>
+            </div>
+        </div>
+        <div class="background-rectangle"></div>
+        
+    </div>
+
+    <div class="testimonials-section">
+      <a href="testimonials.html">
+        <h2 style="text-decoration: none;">Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Exceptional skills, unwavering dedication, and remarkable accounting intellect. 
+                  Professionalism, proficiency, and proactive problem-solving. 
+                  Outstanding interpersonal skills and natural leadership qualities."</p>
+                <p>- Sanjay Chotkan</p>
+            </div>
+            <div class="testimonial">
+                <p>"Instrumental in streamlining financial processes.
+                   Expertise in financial tasks and guidance during audits. 
+                   Professionalism, punctuality, and commitment to client satisfaction. 
+                  Proficient use of modern accounting software and technologies."</p>
+                <p>Carl Collison</p>
+            </div>
+            <div class="testimonial">
+                <p>"Reliable and professional accounting services for 7 years. 
+                  No request is too much trouble. 
+                  Allows focus on business growth. Highly recommended"</p>
+                <p>Monageng Legae</p>
+            </div>
+        </div>
+      </a>
+    </div>
+</main>
+    <script>
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function() {
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (st > lastScrollTop) {
+                document.querySelector('.about-content').classList.remove('reverse');
+            } else {
+                document.querySelector('.about-content').classList.add('reverse');
+            }
+            lastScrollTop = st <= 0 ? 0 : st;
+
+            // Call the function to animate testimonials when scrolling
+            animateTestimonials();
+        }, false);
+
+        // JavaScript code to trigger the animation when the testimonials section is in view
+        const testimonialsSection = document.querySelector('.testimonials-section');
+        const testimonials = document.querySelectorAll('.testimonial');
+
+        function isElementInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function animateTestimonials() {
+            testimonials.forEach(testimonial => {
+                if (isElementInViewport(testimonial)) {
+                    testimonial.classList.add('animate__animated', 'animate__fadeInUp');
+                }
+            });
+        }
+    </script>
+</body>
+
+<footer class="footer">
+
+    <div class="footer-content">
+        <div class="get-in-touch">
+            <h3>Get in Touch</h3>
+            <p>Phone: 061 406 0918</p>
+            <p>Email: raeesah@zyciantax.co.za</p>
+            <p>Address: ---------------</p>
+        </div>
+
+        <div class="social-links">
+            <h3>Socials</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+    <p>&copy; 2024 Your Company. All rights reserved.</p>
+</footer>
+
+</html>
